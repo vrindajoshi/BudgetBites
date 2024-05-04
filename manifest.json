@@ -9,7 +9,7 @@
         "128": "/images/heart-128.png"
     },
     "content_scripts": [ {
-        "matches": ["https://www.walmart.ca/en/cp/grocery/"],
+        "matches": ["https://www.walmart.ca/en/cp/grocery/*"],
         "js": ["script.js"]
       } ],
     "action": {
