@@ -8,7 +8,7 @@
 html
 {
     width: 300px;  /* max: 800px */
-    height: 400px; /* max: 600px */
+    height: 370px; /* max: 600px */
     
 }
 
@@ -24,7 +24,7 @@ h2 {
     background-color: #AEBB36;
     border-radius: 16px;
     width: 80vw;
-    margin-right: 2vh;
+    margin-right: 4vh;
     margin-top: 2vh;
     border: none;
     color: #40290F;
