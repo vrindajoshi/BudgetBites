@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "BudgetBites",
+    "description": "",
+    "version": "1.0",
+    "icons": { 
+        "16": "/images/heart-16.png",
+        "48": "/images/heart-48.png",
+        "128": "/images/heart-128.png"
+    },
+    "content_scripts": [ {
+        "matches": ["https://www.walmart.ca/en/cp/grocery/"],
+        "js": ["script.js"]
+      } ],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
