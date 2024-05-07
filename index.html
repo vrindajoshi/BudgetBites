@@ -18,14 +18,78 @@
 </head>
 
 <body>
-        <h2>Save With These Coupons</h2>
+    <header style="font-size: 10vh; color: #AEBB36; margin: 1vh;">
+        <img style="display: inline-block; padding-left: 2vh;" src="images/logo - 48.png"><h1 style="display: inline-block; padding: 2vh;">BudgetBites</h1>
+    </header>
+        <h2 style="font-size: 3vh; color: #AEBB36; margin: 2vh;">Availiable Coupons:</h2>
+
+        <style>
+           .coupons{
+            margin: 2vh;
+           } 
+
+           * {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;  
+            }
+
+            .coupon-title {
+                padding-left: 1vh;
+            }
+             body{
+                background-color: beige;
+             }
+
+             .coupons{
+    background-color: #AEBB36;
+    border-radius: 16px;
+    width: 80vw;
+    margin-right: 4vh;
+    margin-top: 2vh;
+    border: none;
+    color: #40290F;
+}
+
+.coupon-text {
+    padding-top: 3vh;
+}
+
+.coupon-button {
+    float: right;
+    border-radius: 3px;
+    padding: 1vh;
+    border: none;
+    background-color: #FFF5B2;
+    margin-bottom: 2vh;
+}
+html
+{
+    width: 270px;  /* max: 800px */
+    height: 370px; /* max: 600px */
+    
+}
+
+header{
+    font-size: 10vh;
+    color: #AEBB36;
+    margin: 2vh;
+}
+        </style>
 
         <div class="container coupons">
             <div class="row row-cols-2">
               <div class="col-11 coupon-text">
                 <h3 class="coupon-title">Save $2 on Apples</h3>
-                <p>When you spend $4 on Gala, McIntosh, or Granny Smith Apples</p>
-                <button class="coupon-button">JDHT5</button>
+                <p class="coupon-title">When you spend $4 on Gala, McIntosh, or Granny Smith Apples</p>
+                <button class="coupon-button" onclick="copy()" id="copy">JDHT5</button>
+
+            <script>
+                function copy() {
+                var copyText = document.querySelector("#copy"); 
+                copyText.select(); document.execCommand("copy");}
+                document.querySelector("#copy").addEventListener("click", copy);
+            </script>
+
                 </div>
             </div>
         </div>
@@ -34,8 +98,15 @@
             <div class="row row-cols-2">
               <div class="col-11 coupon-text">
                 <h3 class="coupon-title">Save 20% when you shop local fruits</h3>
-                <p>In partnership with Ontario Farmers</p>
-                <button class="coupon-button">FBSI3</button>
+                <p class="coupon-title">In partnership with Ontario Farmers</p>
+                <button class="coupon-button" onclick="copy()" id="copy2">HDJD7</button>
+
+            <script>
+                function copy() {
+                var copyText = document.querySelector("#copy2"); 
+                copyText.select(); document.execCommand("copy2");}
+                document.querySelector("#copy2").addEventListener("click", copy);
+            </script>
               </div>
             </div>
         </div>
@@ -43,9 +114,16 @@
         <div class="container coupons">
             <div class="row row-cols-2">
               <div class="col-11 coupon-text">
-                <h3 class="coupon-title">Buy a pound of apples, get a jar of peanut butter for free</h3>
-                <p>The perfect snack</p>
-                <button class="coupon-button">GHDE8</button>
+                <h3 class="coupon-title">Snack Deal</h3>
+                <p class="coupon-title">Buy a pound of apples, get a jar of peanut butter for free</p>
+                <button class="coupon-button" onclick="copy()" id="copy3">GSBJ9</button>
+
+            <script>
+                function copy() {
+                var copyText = document.querySelector("#copy3"); 
+                copyText.select(); document.execCommand("copy3");}
+                document.querySelector("#copy3").addEventListener("click", copy);
+            </script>
 
               </div>
             </div>
